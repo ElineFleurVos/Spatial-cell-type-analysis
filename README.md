@@ -1,5 +1,8 @@
 # Spatial-cell-type-analysis
-Spatial cell type analysis of the TME using histopathology and transcriptomics data 
+This repository contains code belonging to the master thesis project: Weakly supervised learning for spatial cell type analysis in the tumor microenvironment using pathology and transcriptomics data.
+
+![Uploading image.png…]()
+
 
 ### DATA
 
