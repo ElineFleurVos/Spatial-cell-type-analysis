@@ -40,6 +40,9 @@ Data used in this project are not included on the GitHub and can be shared on re
   - TCGA_tpm_SKCM.txt: transcriptomics tpm data from SKCM TCGA slides needed for cell type quantification
     
 ### CODE
+
+The code is divided into the 
+
 for UNI you need to get a huggingface account, see https://github.com/mahmoodlab/UNI?tab=readme-ov-file and https://huggingface.co/MahmoodLab/UNI 
 
 The bash pipelines do this and this. 
