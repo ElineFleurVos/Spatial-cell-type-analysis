@@ -52,7 +52,7 @@ sheet_name=None
 # 1: compute all features
 workflow=1
 
-python $code_dir/Other/computing_features.py \
+python $code_dir/Other/computing_spatial_features.py \
     --workflow_mode $workflow \
     --tile_quantification_dir $tile_quantification_dir \
     --output_dir $features_output_dir \
