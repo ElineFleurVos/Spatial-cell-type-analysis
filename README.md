@@ -41,17 +41,17 @@ Data used in this project are not included on the GitHub and can be shared on re
     
 ### CODE
 
-The code is divided into the four main building blocks of the pipeline. The map Bash-pipeline_SKCM contains bash files were all necessary files are run in order (except the R code for cell type deconvolutions. This has to be done separately beforehand). The SKCM pipeline uses the following approaches: Inception-V4 feature extraction + general quantifications --> RMTLR model --> spatial feature calculation. The map Bash-Pipeline_CRC also contains bash files were all necessary files are run in order. The same approaches are used as for the SKCM pipeline. UNI feature extraction, MIL and the cancer specific quantifications can be run separately and can be found in their respective maps. 
+The code is divided into the four main building blocks of the pipeline. The map Bash-pipeline_SKCM contains bash files were all necessary files are run in order (except the R code for cell type deconvolutions. This has to be done separately beforehand). The SKCM pipeline uses the following approaches: Inception-V4 feature extraction + general quantifications --> RMTLR model --> spatial feature calculation. The map Bash-Pipeline_CRC also contains bash files where all necessary files are run in order. Not here that the same approaches are used as for the SKCM pipeline. UNI feature extraction, MIL and the cancer specific cell type quantification can be run separately and can be found in their respective maps. 
 
 Other things to note:
-- for UNI you need to get a huggingface account, see https://github.com/mahmoodlab/UNI?tab=readme-ov-file and https://huggingface.co/MahmoodLab/UNI  
-
+- for UNI you need to get a huggingface account, see https://github.com/mahmoodlab/UNI?tab=readme-ov-file and https://huggingface.co/MahmoodLab/UNI
+- The map other contains a submap IF_cell_type_reduction. This map contains code to classify single cells into cell types based on the fluorescence values using a gaussian mixture model. Did not work out in the end.
 
 ### Environments
 Different python environment are needed to run different parts of the code:
-- environment_tiatoolbox.yml --> For running code where tiatoolbox is needed (tile making, Kather predictions, stain_normalization):
-- environment_rectangle.yml --> For running rectangle (cancer-specific cell type quantifications)
-- environment_MIL.yml --> For training MIL 
-- environment_UNI.yml --> for making tile features using UNI
-- environment_main.yml --> for everything else (for instance RMTLR). If this does not work, environment_tiatoolbox.yml could be tried next. 
+- environment_tiatoolbox.yml --> For running code where tiatoolbox is needed (tile making, Kather predictions, stain_normalization).
+- environment_rectangle.yml --> For running rectangle (cancer-specific cell type quantifications).
+- environment_MIL.yml --> For training MIL.
+- environment_UNI.yml --> For making tile features using UNI.
+- environment_main.yml --> For everything else (for instance RMTLR). If this does not work, environment_tiatoolbox.yml could be tried next. 
 
