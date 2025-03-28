@@ -1,0 +1,57 @@
+---
+title: "immunedeconv - Compute Features"
+author: "J.B.Y. Kant"
+date: "30/03/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+immunedeconv offers the following methods: 
+- quantiseq
+- mcp_counter
+- xcell
+- epic
+## import package and load data
+```{r import}
+library(immunedeconv)
+
+cancer_type = "BLCA"
+
+input_path <- "C:/Users/20182460/Desktop/Master_thesis/Code/Data/TCGA_SKCM/TCGA_tpm_SKCM.txt"
+output_path <- "C:/Users/20182460/Desktop/Master_thesis/Code/Outputs/SKCM"
+
+# Give TPM-normalized 
+TPM <- read.csv(input_path, header = T, sep = "\t")
+```
+
+
+## 1) quanTIseq
+```{r quantiseq}
+cell_fractions <- deconvolute_quantiseq(TPM, tumor=TRUE, arrays=FALSE, scale_mrna=TRUE)
+write.csv(cell_fractions,paste0(output_path, cancer_type, "_quantiseq.csv"), row.names = TRUE)
+```
+
+## 2) MCP Counter
+```{r mcp counter}
+cell_fractions <- deconvolute(TPM, "mcp_counter")
+write.csv(cell_fractions,paste0(output_path, cancer_type, "_mcp_counter.csv"), row.names = TRUE)
+```
+## 3) XCell
+```{r xcell}
+cell_fractions <- deconvolute(TPM, "xcell")
+write.csv(cell_fractions,paste0(output_path, cancer_type, "_xcell.csv"), row.names = TRUE)
+```
+## 4) EPIC
+```{r epic}
+cell_fractions <- deconvolute_epic(TPM, tumor=TRUE, scale_mrna=T)
+write.csv(cell_fractions,paste0(output_path, cancer_type, "_epic.csv"), row.names = TRUE)
+```
+
+# Session Info
+```{r printpackages, echo=FALSE}
+sessionInfo()
+```
+
