@@ -1,9 +1,15 @@
 # Spatial-cell-type-analysis
 This repository contains code belonging to the master thesis project: Weakly supervised learning for spatial cell type analysis in the tumor microenvironment using pathology and transcriptomics data.
 
-![image](https://github.com/user-attachments/assets/9ac0a3e3-4785-4fe3-8238-a10b2dfc5aa3)
+![image](https://github.com/user-attachments/assets/6d913b21-ff88-40c0-a5ba-d8094fe43614)
 
+Feature extraction --> two approaches: Inception-V4 vs UNI
+Cell type quantification --> two approaches: general quantifications vs cancer-specific quantifications
+Weakly supervised learning --> two approaches: regularizated multitask linear regression (RMTLR) vs multiple instance learning (MIL)
 
+![image](https://github.com/user-attachments/assets/296304ee-b5e4-412a-91b5-81417ac21db4)
+
+Validation --> two approaches: comparison fully supervised (Kather) vs immunofluorescence (Lin)
 
 ### DATA
 
