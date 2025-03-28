@@ -3,8 +3,8 @@ This repository contains code belonging to the master thesis project: Weakly sup
 
 ![image](https://github.com/user-attachments/assets/6d913b21-ff88-40c0-a5ba-d8094fe43614)
 
-Feature extraction --> two approaches: Inception-V4 vs UNI
-Cell type quantification --> two approaches: general quantifications vs cancer-specific quantifications
+Feature extraction --> two approaches: Inception-V4 vs UNI  
+Cell type quantification --> two approaches: general quantifications vs cancer-specific quantifications  
 Weakly supervised learning --> two approaches: regularizated multitask linear regression (RMTLR) vs multiple instance learning (MIL)
 
 ![image](https://github.com/user-attachments/assets/296304ee-b5e4-412a-91b5-81417ac21db4)
