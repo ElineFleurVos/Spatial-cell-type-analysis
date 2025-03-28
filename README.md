@@ -18,15 +18,35 @@ Data used in this project are not included on the GitHub and can be shared on re
   - Orion_single_cell_tables: Orion single cell tables containing immunofluorescence values of markers on the single cell level
   - Orion_slides: Orion H&E slides
 - Other
+  - CRC_scRNAseq_pelka: single cell data
+  - Model_weights_v4: model weights for Inception-V4 feature extraction model
+  - Published_RNA_data: published RNA data used for obtaining general cell type quantifications
+  - gene_signatures.gmt: gene signatures used for obtaining general cell type quantifications
+  - MFP_data.xlsx: extra data from the TCGA images, cancer environment subtypes can be found here
+  - normalization_template.jpg: template used for Macenko stain normalization
 - TCGA_CRC
+  - all_GDC_data: all clinical data belonging to the TCGA images downloaded from GDC database
+  - slides: all FF and FFPE CRC TCGA H&E slides
+  - subset_slides: a subset of FF and FFPE TCGA H&E slides
+  - clinical_file_TCGA_CRC.tsv: raw clinical file from GDC data portal used to filter slides and make a new clinical file
+  - slide_filenames_CRC_FF.txt: all slide FF filenames needed to filter the slides
+  - slide_filenames_CRC_FFPE.txt: all slide FFPE filenames needed to filter the slides
+  - TCGA_counts_CRC.txt: transcriptomics count data from CRC TCGA slides
+  - TCGA_tpm_CRC.txt: transcriptomics tpm data from CRC TCGA slides needed for cell type quantification
 - TCGA_SKCM
-
+  - slides: all FF and FFPE SKCM TCGA H&E slides
+  - clinical_file_TCGA_SKCM.txt: raw clinical file from GDS data portal used to filter slides and make a new clinical file
+  - TCGA_counts_SKCM.txt :transcriptomics count data from SKCM TCGA slide
+  - TCGA_tpm_SKCM.txt: transcriptomics tpm data from SKCM TCGA slides needed for cell type quantification
+    
 ### CODE
 for UNI you need to get a huggingface account, see https://github.com/mahmoodlab/UNI?tab=readme-ov-file and https://huggingface.co/MahmoodLab/UNI 
 
 The bash pipelines do this and this. 
 
 For the MIL pipeline all files are in 3_training/tain_MIL
+
+
 ### Environments
 
 Everything for which tiatoolbox is used ...
