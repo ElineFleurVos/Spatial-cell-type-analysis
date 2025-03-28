@@ -41,7 +41,7 @@ Data used in this project are not included on the GitHub and can be shared on re
     
 ### CODE
 
-The code is divided into the four main building blocks of the pipeline. The map Bash-pipeline_SKCM contains bash files were all necessary files are run in order (except the R code for cell type deconvolutions. This has to be done separately beforehand). The SKCM pipeline uses the following approaches: Inception-V4 feature extraction + general quantifications --> RMTLR model --> spatial feature calculation. The map Bash-Pipeline_CRC also contains bash files where all necessary files are run in order. Not here that the same approaches are used as for the SKCM pipeline. UNI feature extraction, MIL and the cancer specific cell type quantification can be run separately and can be found in their respective maps. 
+The code is divided into the four main building blocks of the pipeline. The map Bash-pipeline_SKCM contains bash files were all necessary files are run in order (except the R code for cell type deconvolutions. This has to be done separately beforehand). The SKCM pipeline uses the following approaches: Inception-V4 feature extraction + general quantifications --> RMTLR model --> spatial feature calculation. The map Bash-Pipeline_CRC also contains bash files where all necessary files are run in order. Note here that the same approaches are used as for the SKCM pipeline. UNI feature extraction, MIL and the cancer specific cell type quantification can be run separately and can be found in their respective maps. 
 
 Other things to note:
 - for UNI you need to get a huggingface account, see https://github.com/mahmoodlab/UNI?tab=readme-ov-file and https://huggingface.co/MahmoodLab/UNI
