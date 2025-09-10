@@ -21,7 +21,7 @@ hugging face and ask acces to the model weights.
 logging.basicConfig(level=logging.ERROR)
 
 # Hugging Face login
-login("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")
+login("insert token here")
 
 # Initialize the UNI model
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
