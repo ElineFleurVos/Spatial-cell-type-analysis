@@ -72,7 +72,7 @@ def list_images_for_tiling(slides_dir, clinical_file_dir, CRC_tpm_dir, filter_on
 
     return images_for_tiling
 
-login("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")
+login("insert token here")
 # pretrained=True needed to load UNI weights (and download weights for the first time)
 # init_values need to be passed in to successfully load LayerScale parameters (e.g. - block.0.ls1.gamma)
 model = timm.create_model("hf-hub:MahmoodLab/uni", pretrained=True, init_values=1e-5, dynamic_img_size=True)
